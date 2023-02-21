@@ -31,16 +31,5 @@ PRIMARY KEY (email),
 Foreign Key (patient) REFERENCES Patient (id)
 )
 
-Create Table Diagnoses (
-diagnoid int not null,
-appointment int not null,
-doctor varchar(40) not null,
-doctoremail varchar(40) not null,
-diagnosis varchar(40) not null,
-prescription varchar(50) not null,
-Foreign Key (appointment) REFERENCES Appointment (id),
-Foreign Key (email) REFERENCES Doctor (email),
-Primary Key (diagnoid)
-)
 
 /*======================== END TABLES ======================*/
